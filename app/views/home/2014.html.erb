@@ -1,24 +1,25 @@
-
-  <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-      학과년도
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-      <li><%=link_to "2012년", home_2012_path%></li>
-      <li><%=link_to "2013년", home_2013_path%></li>
-      <li><%=link_to "2014년", home_2014_path%></li>
-      <li><%=link_to "2015년", home_2015_path%></li>
-      <li><%=link_to "2016년", home_score_info_path%></li>
-    </ul>
-  </div>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    학과년도
+    <span class="caret"></span>
+  </button>
+   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><%=link_to "2009년", home_2009_path%></li>
+    <li><%=link_to "2010년", home_2010_path%></li>
+    <li><%=link_to "2011~2년", home_2012_path%></li>
+    <li><%=link_to "2013년", home_2013_path%></li>
+    <li><%=link_to "2014년", home_2014_path%></li>
+    <li><%=link_to "2015년", home_2015_path%></li>
+    <li><%=link_to "2016년", home_score_info_path%></li>
+  </ul>
+</div>
 <p>2014년도 학점 정보</p>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          교양 29학점
+          교양 [ 29학점 ]
         </a>
       </h4>
     </div>
@@ -27,65 +28,70 @@
         <div class = "table-responsive">
           <table class="table table-bordered">
             <tr>
-              <th>영역</th>
-              <th>이수학점</th>
-              <th>분야</th>
-              <th>이수방법</th>
+              <th style="text-align: center;vertical-align:middle;">영역</th>
+              <th style="text-align: center;vertical-align:middle;">이수학점</th>
+              <th style="text-align: center;vertical-align:middle;">분야</th>
+              <th style="text-align: center;vertical-align:middle;">이수방법</th>
             </tr>
             <tr>
-              <td rowspan="3">기초교양</td>
-              <td>3</td>
-              <td>글쓰기와 말하기</td>
-              <td rowspan="3">전학과 공통 필수로 이수</td>
+              <td style="text-align: center;vertical-align:middle;" rowspan="3">기초교양</td>
+              <td style="text-align: center;vertical-align:middle;">3</td>
+              <td style="text-align: center;vertical-align:middle;">글쓰기와 말하기</td>
+              <td style="text-align: center;vertical-align:middle;" rowspan="3">전학과 공통 필수로 이수</td>
             </tr>
             <tr>
-              <td rowspan="2">4</td>
-              <td>의사소통 영어1</td>
+              <td style="text-align: center;vertical-align:middle;" rowspan="2">4</td>
+              <td style="text-align: center;vertical-align:middle;">의사소통 영어1</td>
             </tr>
             <tr>
-              <td>의사소통 영어2</td>
+              <td style="text-align: center;vertical-align:middle;">의사소통 영어2</td>
             </tr>
             <tr>
-              <td rowspan="6">균형교양</td>
-              <td rowspan="6">12</td>
-              <td>언어와 문학</td>
-              <td rowspan="3">3개 분야 중 2개 분야를 선택하여 1과목씩을 필수로 이수</td>
+              <td style="text-align: center;vertical-align:middle;" rowspan="6">균형교양</td>
+              <td style="text-align: center;vertical-align:middle;" rowspan="6">12</td>
+              <td style="text-align: center;vertical-align:middle;">언어와 문학</td>
+              <td style="text-align: center;vertical-align:middle;" rowspan="3">3개 분야 중 2개 분야를 선택하여 1과목씩을 필수로 이수</td>
             </tr>
             <tr>
-              <td>역사와 철학</td>
+              <td style="text-align: center;vertical-align:middle;">역사와 철학</td>
             </tr>
             <tr>
-              <td>사회와 문화</td>
+              <td style="text-align: center;vertical-align:middle;">사회와 문화</td>
             </tr>
             <tr>
-              <td>과학과 기술</td>
-              <td rowspan="3">3개분야 중 2개 분야를 선택하여 1과목씩을 필수로 이수<br>추천<br>- 웹과인터넷활용및실습<br>- 컴퓨터개론및실습</td>
+              <td style="text-align: center;vertical-align:middle;">과학과 기술</td>
+              <td style="text-align: center;vertical-align:middle;" rowspan="3">3개분야 중 2개 분야를 선택하여 1과목씩을 필수로 이수<br>추천<br>- 웹과인터넷활용및실습<br>- 컴퓨터개론및실습</td>
             </tr>
             <tr>
-              <td>수리적 사고</td>
+              <td style="text-align: center;vertical-align:middle;">수리적 사고</td>
             </tr>
             <tr>
-              <td>예술과 건강</td>
+              <td style="text-align: center;vertical-align:middle;">예술과 건강</td>
             </tr>
             <tr>
-              <td rowspan="2">특화교양</td>
-              <td rowspan="2">1</td>
-              <td>융·복합</td>
-              <td rowspan="2">2개 분야 중에서 1학점을 필수로 이수</td>
+              <td style="text-align: center;vertical-align:middle;" rowspan="2">특화교양</td>
+              <td style="text-align: center;vertical-align:middle;" rowspan="2">1</td>
+              <td style="text-align: center;vertical-align:middle;">융·복합</td>
+              <td style="text-align: center;vertical-align:middle;" rowspan="2">2개 분야 중에서 1학점을 필수로 이수</td>
             </tr>
             <tr>
-              <td>미래준비</td>
+              <td style="text-align: center;vertical-align:middle;">미래준비</td>
             </tr>
             <tr>
-              <td>대학별교양</td>
-              <td>9</td>
-              <td>대학(학부)공통 또는 기초</td>
-              <td>- 기초통계학<br>
+              <td style="text-align: center;vertical-align:middle;">대학별교양</td>
+              <td style="text-align: center;vertical-align:middle;">9</td>
+              <td style="text-align: center;vertical-align:middle;">대학(학부)공통 또는 기초</td>
+              <td style="text-align: center;vertical-align:middle;">- 기초통계학<br>
               - 미분적분학1<br>
               - 컴퓨터프로그래밍응용</td>
             </tr>
           </table>
         </div>
+        <P style = "font-size:14px">심화학점 27학점은 전공선택 과목을 의미합니다.<br> (단일전공만 해당)<br>
+꿈-설계 상담은 0.5학점으로 최대 6번(3학점)까지<br> 수강이 가능합니다.<br>
+
+※현재까지 이수한 학점은 <br>KNU포탈 - 학부학사 - 학적관리 - 학생정보조회및변경 - 성적 탭 - 출력 버튼(오른쪽 상단) 에서 <br>확인할 수 있습니다.
+<br>※위 내용은 축약하여 나타난 내용으로 자세한 사항이나 <br>문의 사항은 전공 학과 사무실(033-250-8440)으로 <br>문의해주세요.</P>
       </div>
     </div>
   </div>
@@ -93,19 +99,43 @@
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          일반 교양 9
+          대학별 교양 [ 9학점 ]
         </a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-        <ul>
-          인문학 분야<br>
-          문화예술과 건강 분야<br>
-          사회학과 분야<br>
-          위 분야중 2개분야 선택 총6학점<br>
-          자연과학과 과학기술<br>
-        </ul>
+        <div class = "table-responsive">
+          <table class="table table-bordered">
+            <tr>
+              <th style="text-align: center;vertical-align:middle;" rowspan="2">교과목명</th>
+              <th style="text-align: center;vertical-align:middle;" rowspan="2">학점 및 시수<br>학점-강의-실습</th>
+              <th style="text-align: center;vertical-align:middle;" colspan="2">1학년</th>
+            </tr>
+            <tr>
+              <td style="text-align: center;vertical-align:middle;">1학기</td>
+              <td style="text-align: center;vertical-align:middle;">1학기</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;vertical-align:middle;">기초통계학</td>
+              <td style="text-align: center;vertical-align:middle;">3-3-0</td>
+              <td style="text-align: center;vertical-align:middle;">O</td>
+              <td style="text-align: center;vertical-align:middle;"></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;vertical-align:middle;">미적분학</td>
+              <td style="text-align: center;vertical-align:middle;">3-3-0</td>
+              <td style="text-align: center;vertical-align:middle;">O</td>
+              <td style="text-align: center;vertical-align:middle;"></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;vertical-align:middle;">컴퓨터프로그래밍</td>
+              <td style="text-align: center;vertical-align:middle;">3-2-2</td>
+              <td style="text-align: center;vertical-align:middle;"></td>
+              <td style="text-align: center;vertical-align:middle;">O</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -113,16 +143,26 @@
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          자유교양 2
+          특화교양 [ 2학점 ]
         </a>
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       <div class="panel-body">
-        사회 봉사<br>
-        진로 탐색<br>
-        인턴 실습<br>
-		해외어학연수<br>
+        <div class = "table-responsive">
+          <table class="table table-bordered">
+            <tbody>
+            <tr>
+            <th style="text-align: center;">과목명</th>
+            <th style="text-align: center;">학점</th>
+            </tr>
+            <tr>
+            <td style="text-align: center;">사회봉사,인턴실습,진로탐색,해외어학연수</td>
+            <td style="text-align: center;">2</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -130,16 +170,33 @@
     <div class="panel-heading" role="tab" id="headingFour">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          전공 필수 12
+          전공 필수 [ 12학점 ]
         </a>
       </h4>
     </div>
     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
       <div class="panel-body">
-        프로그래밍 언어론<br>
-        운영 체제<br>
-        컴퓨터 구조<br>
-        데이터 베이스<br>
+        <table class="table table-bordered">
+            <tbody>
+            <tr><th style="text-align: center;">학년</th><th style="text-align: center;">과목명</th></tr>
+            <tr>
+            <td style="text-align: center;">2-1</td>
+            <td style="text-align: center;">프로그래밍 언어론</td>
+            </tr>
+            <tr>
+            <td style="text-align: center;">2-2</td>
+            <td style="text-align: center;">운영체제</td>
+            </tr>
+            <tr>
+            <td style="text-align: center;">3-1</td>
+            <td style="text-align: center;">컴퓨터구조</td>
+            </tr>
+            <tr>
+            <td style="text-align: center;">3-2</td>
+            <td style="text-align: center;">데이터베이스</td>
+            </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -147,7 +204,7 @@
     <div class="panel-heading" role="tab" id="headingFive">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          전공 선택 (최소 30)
+          전공 선택 [ 30학점 ]
         </a>
       </h4>
     </div>
@@ -157,141 +214,138 @@
       </div>
         <div class = "table-responsive">
           <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>학년<br>학기</th>
-                <th>교과목명</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td rowspan="4">2-1</td>
-                <td>이산수학</td>
-              </tr>
-              <tr>
-                <td>논리회로</td>
-              </tr>
-              <tr>
-                <td>선형대수학</td>
-              </tr>
-              <tr>
-                <td>웹프로그래밍 및 실습</td>
-              </tr>
-              <tr>
-                <td rowspan="7">2-2</td>
-                <td>자료구조</td>
-              </tr>
-              <tr>
-                <td>수치해석</td>
-              </tr>
-              <tr>
-                <td>디지털회로설계</td>
-              </tr>
-              <tr>
-                <td>인공지능</td>
-              </tr>
-              <tr>
-                <td>소프트웨어공학</td>
-              </tr>
-              <tr>
-                <td>정보검색 및 실습</td>
-              </tr>
-              <tr>
-                <td>객체지향프로그래밍</td>
-              </tr>
-              <tr>
-                <td rowspan="7">3-1</td>
-                <td>컴퓨터알고리증</td>
-              </tr>
-              <tr>
-                <td>자료처리</td>
-              </tr>
-              <tr>
-                <td>수치해석응용</td>
-              </tr>
-              <tr>
-                <td>데이터통신</td>
-              </tr>
-              <tr>
-                <td>시스템프로그래밍</td>
-              </tr>
-              <tr>
-                <td>컴퓨터그래픽스</td>
-              </tr>
-              <tr>
-                <td>정보ㆍ컴퓨터교재연구 및 지도법</td>
-              </tr>
-              <tr>
-                <td rowspan="6">3-2</td>
-                <td>컴퓨터시스템설계</td>
-              </tr>
-              <tr>
-                <td>형식언어와 오토마타</td>
-              </tr>
-              <tr>
-                <td>네트워크프로그래밍</td>
-              </tr>
-              <tr>
-                <td>정보시스템 보안</td>
-              </tr>
-              <tr>
-                <td>리눅스/유닉스프로그래밍</td>
-              </tr>
-              <tr>
-                <td>정보ㆍ컴퓨터교육론</td>
-              </tr>
-              <tr>
-                <td rowspan="10">4-1</td>
-                <td>컴퓨터네트워크</td>
-              </tr>
-              <tr>
-                <td>컴파일러구성론</td>
-              </tr>
-              <tr>
-                <td>마이크로컴퓨터</td>
-              </tr>
-              <tr>
-                <td>데이터베이스프로그래밍</td>
-              </tr>
-              <tr>
-                <td>모바일 네트워크 및 프로그래밍</td>
-              </tr>
-              <tr>
-                <td>파일처리</td>
-              </tr>
-              <tr>
-                <td>소프트웨어 설계 및 프로젝트</td>
-              </tr>
-              <tr>
-                <td>현장실습 1</td>
-              </tr>
-              <tr>
-                <td>정보ㆍ컴퓨터논리 및 논술</td>
-              </tr>
-               <tr>
-                <td>캡스톤디자인 1</td>
-              </tr>
-              <tr>
-                <td rowspan="6">4-2</td>
-                <td>멀티미디어</td>
-              </tr>
-              <tr>
-                <td>네트워크 보안</td>
-              </tr>
-              <tr>
-                <td>임베디드시스템</td>
-              </tr>
-              <tr>
-                <td>현장실습 2</td>
-              </tr>
-              <tr>
-                <td>캡스톤디자인 1</td>
-              </tr>
-              <tr>
-                <td>자연언어처리</td>
-              </tr>
-            </tbody>
-          </table>
+<thead>
+<tr><th style="text-align: center;">학년<br />학기</th><th style="text-align: center;">교과목명</th></tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;" rowspan="4">2-1</td>
+<td style="text-align: center;">이산수학</td>
+</tr>
+<tr>
+<td style="text-align: center;">논리회로</td>
+</tr>
+<tr>
+<td style="text-align: center;">선형대수학</td>
+</tr>
+<tr>
+<td style="text-align: center;">웹프로그래밍 및 실습</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="7">2-2</td>
+<td style="text-align: center;">자료구조</td>
+</tr>
+<tr>
+<td style="text-align: center;">수치해석</td>
+</tr>
+<tr>
+<td style="text-align: center;">디지털회로설계</td>
+</tr>
+<tr>
+<td style="text-align: center;">인공지능</td>
+</tr>
+<tr>
+<td style="text-align: center;">소프트웨어공학</td>
+</tr>
+<tr>
+<td style="text-align: center;">정보검색 및 실습</td>
+</tr>
+<tr>
+<td style="text-align: center;">객체지향프로그래밍</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="7">3-1</td>
+<td style="text-align: center;">컴퓨터알고리증</td>
+</tr>
+<tr>
+<td style="text-align: center;">자료처리</td>
+</tr>
+<tr>
+<td style="text-align: center;">수치해석응용</td>
+</tr>
+<tr>
+<td style="text-align: center;">데이터통신</td>
+</tr>
+<tr>
+<td style="text-align: center;">시스템프로그래밍</td>
+</tr>
+<tr>
+<td style="text-align: center;">컴퓨터그래픽스</td>
+</tr>
+<tr>
+<td style="text-align: center;">정보ㆍ컴퓨터교재연구 및 지도법</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="6">3-2</td>
+<td style="text-align: center;">컴퓨터시스템설계</td>
+</tr>
+<tr>
+<td style="text-align: center;">형식언어와 오토마타</td>
+</tr>
+<tr>
+<td style="text-align: center;">네트워크프로그래밍</td>
+</tr>
+<tr>
+<td style="text-align: center;">정보시스템 보안</td>
+</tr>
+<tr>
+<td style="text-align: center;">리눅스/유닉스프로그래밍</td>
+</tr>
+<tr>
+<td style="text-align: center;">정보ㆍ컴퓨터교육론</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="10">4-1</td>
+<td style="text-align: center;">컴퓨터네트워크</td>
+</tr>
+<tr>
+<td style="text-align: center;">컴파일러구성론</td>
+</tr>
+<tr>
+<td style="text-align: center;">마이크로컴퓨터</td>
+</tr>
+<tr>
+<td style="text-align: center;">데이터베이스프로그래밍</td>
+</tr>
+<tr>
+<td style="text-align: center;">모바일 네트워크 및 프로그래밍</td>
+</tr>
+<tr>
+<td style="text-align: center;">파일처리</td>
+</tr>
+<tr>
+<td style="text-align: center;">소프트웨어 설계 및 프로젝트</td>
+</tr>
+<tr>
+<td style="text-align: center;">현장실습 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">정보ㆍ컴퓨터논리 및 논술</td>
+</tr>
+<tr>
+<td style="text-align: center;">캡스톤디자인 1</td>
+</tr>
+<tr>
+<td style="text-align: center;" rowspan="6">4-2</td>
+<td style="text-align: center;">멀티미디어</td>
+</tr>
+<tr>
+<td style="text-align: center;">네트워크 보안</td>
+</tr>
+<tr>
+<td style="text-align: center;">임베디드시스템</td>
+</tr>
+<tr>
+<td style="text-align: center;">현장실습 2</td>
+</tr>
+<tr>
+<td style="text-align: center;">캡스톤디자인 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">자연언어처리</td>
+</tr>
+</tbody>
+</table>
         </div>
       </div>
     </div>

@@ -21,6 +21,8 @@ Rails.application.routes.draw do
   post 'admin/admin_import' => 'admin#admin_import'
 
   get 'home/score_info' => 'home#score_info'
+  get 'home/2009' => 'home#2009'
+  get 'home/2010' => 'home#2010'
   get 'home/2012' => 'home#2012'
   get 'home/2013' => 'home#2013'
   get 'home/2014' => 'home#2014'
