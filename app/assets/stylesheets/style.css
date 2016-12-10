@@ -141,7 +141,7 @@ header .intro-text .skills {
 
   }
   header .container {
-    width: 100%;
+    width: 10%;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -169,8 +169,23 @@ header .intro-text .skills {
    margin-left: auto;
    height: 170px;
   }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive{
+    display: block;
+    max-width: 30%;
+    height: auto;
+  }
   .caption{
     height: 200px;
+  }
+  .signup{
+    padding-bottom: 105px;
+  }
+  .signin{
+    padding-top: 32px;
+    padding-bottom: 130px;
+  }
+  .room, .footer2{
+    padding-bottom: 40px;
   }
 }
 .navbar-custom {
