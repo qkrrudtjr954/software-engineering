@@ -1,0 +1,41 @@
+<p>
+  <h4>작성자: <small><%=@detail.writer%></small></h4>
+  <h1><small>Q : </small><%=@detail.content%></h1>
+</p>
+
+<div class="jumbotron">
+  <div>
+    <%= form_tag qna_detail_create_path, method: "post" do %>
+      <div class="form-group">
+        <input type="hidden" name="post_id" value="<%=@detail.id%>">
+        <input type="hidden" name="user_name" value="<%=current_user.name%>">
+        <textarea name="content" class="form-control"  row="1" placeholder="What is your opinions of that question?"></textarea>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="row marketing">
+  <p class="text-right"><%= link_to "목록", qna_qna_index_path %></p>
+  <table class="qna_index_table" wight="95%">
+    <tr height="30" class="text-center">
+      <td></td>
+      <td width="55%" style="word-break:break-all">&nbsp;내용&nbsp;</td>
+      <td width="15%" style="word-break:break-all">&nbsp;작성자&nbsp;</td>
+      <td class="text-right"><small style="color:#737373">작성시간</small></td>
+      <td width="15%"></td>
+    </tr>
+    <% @detail.comments.reverse.each_with_index do |c, i| %>
+    <tr height="30">
+      <td><kbd><%= i+1 %></kbd></td>
+      <td width="55%" style="word-break:break-all">&nbsp;<%=c.content %>&nbsp;</td>
+      <td width="15%" style="word-break:break-all">&nbsp;<%=c.writer %>&nbsp;</td>
+      <td class="text-right" width="18%"><small style="color:#737373"><%= time_ago_in_words(c.created_at) %> ago</small></td>
+      <td width="15%">
+        <a href="/qna/comment_destroy/<%=c.id%>">삭제</a>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>

@@ -1,0 +1,13 @@
+<% flash.each do |type, message| %>
+  <div id="myAlert" class="alert <%= bootstrap_class_for(type) %> alert-dismissable fade in">
+    <button id="closeAlert" type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <%= message %>
+  </div>
+<% end %>
+<!-- <script>
+  $('#closeAlert').on('close.bs.alert', function () {
+    $('#myAlert').alert('close');
+  });
+</script> -->

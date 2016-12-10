@@ -1,0 +1,280 @@
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    학과년도
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><%=link_to "2012년", home_2012_path%></li>
+    <li><%=link_to "2013년", home_2013_path%></li>
+    <li><%=link_to "2014년", home_2014_path%></li>
+    <li><%=link_to "2015년", home_2015_path%></li>
+    <li><%=link_to "2016년", home_score_info_path%></li>
+  </ul>
+</div>
+<p>2015년도 학점 정보</p>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          기초 교양 27학점
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        자연 과학 글쓰기와 말하기<br>
+        자연공학계열 영어<br>
+        영문법과 작문<br>
+        미적분학<br>
+        컴퓨터개론 및 실습<br>
+        컴퓨터프로그래밍 기초<br>
+        확률 및 통계<br>
+        웹과 인터넷 활용 및 실습<br>
+        컴퓨터프로그래밍 응용<br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          일반 교양 9
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <ul>
+          <div class = "table-responsive">
+          <table class="table table-bordered">
+            <tr>
+              <th>분야</th>
+              <th>교과목명</th>
+              <th>학점</th>
+              <th>비고</th>
+            </tr>
+            <tr>
+              <td>인문학</td>
+              <td>별도 지정 없음</td>
+              <td rowspan="3">6</td>
+              <td rowspan="3">2개분야선택</td>
+            </tr>
+            <tr>
+              <td>문학예술과 건강</td>
+              <td>별도 지정 없음</td>
+            </tr>
+            <tr>
+              <td rowspan="3">사회학과</td>
+              <td>별도 지정 없음</td>
+            </tr>
+            <tr>
+              <td>기업과 경영</td>
+              <td></td>
+              <td rowspan="2">삼성트랙<br>지정과목</td>
+            </tr>
+            <tr>
+              <td>경제학개론</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>자연과학과<br>과학기술</td>
+              <td>별도 지정 없음</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          자유교양 2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        사회 봉사<br>
+        진로 탐색<br>
+        인턴 실습<br>
+		    해외어학연수<br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          전공 필수 12
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        프로그래밍 언어론<br>
+        운영 체제<br>
+        컴퓨터 구조<br>
+        데이터 베이스<br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          전공 선택 (최소 30)
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+        꿈-설계 과목은 최대 6번(3학점)까지 전공 선택으로 수강 가능<br>
+      </div>
+        <div class = "table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>학년<br>학기</th>
+                <th>교과목명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="4">2-1</td>
+                <td>이산수학</td>
+              </tr>
+              <tr>
+                <td>논리회로</td>
+              </tr>
+              <tr>
+                <td>선형대수학</td>
+              </tr>
+              <tr>
+                <td>웹프로그래밍 및 실습</td>
+              </tr>
+              <tr>
+                <td rowspan="7">2-2</td>
+                <td>자료구조</td>
+              </tr>
+              <tr>
+                <td>수치해석</td>
+              </tr>
+              <tr>
+                <td>디지털회로설계</td>
+              </tr>
+              <tr>
+                <td>인공지능</td>
+              </tr>
+              <tr>
+                <td>소프트웨어공학</td>
+              </tr>
+              <tr>
+                <td>정보검색 및 실습</td>
+              </tr>
+              <tr>
+                <td>객체지향프로그래밍</td>
+              </tr>
+              <tr>
+                <td rowspan="7">3-1</td>
+                <td>컴퓨터알고리증</td>
+              </tr>
+              <tr>
+                <td>자료처리</td>
+              </tr>
+              <tr>
+                <td>수치해석응용</td>
+              </tr>
+              <tr>
+                <td>데이터통신</td>
+              </tr>
+              <tr>
+                <td>시스템프로그래밍</td>
+              </tr>
+              <tr>
+                <td>컴퓨터그래픽스</td>
+              </tr>
+              <tr>
+                <td>정보ㆍ컴퓨터교재연구 및 지도법</td>
+              </tr>
+              <tr>
+                <td rowspan="6">3-2</td>
+                <td>컴퓨터시스템설계</td>
+              </tr>
+              <tr>
+                <td>형식언어와 오토마타</td>
+              </tr>
+              <tr>
+                <td>네트워크프로그래밍</td>
+              </tr>
+              <tr>
+                <td>정보시스템 보안</td>
+              </tr>
+              <tr>
+                <td>리눅스/유닉스프로그래밍</td>
+              </tr>
+              <tr>
+                <td>정보ㆍ컴퓨터교육론</td>
+              </tr>
+              <tr>
+                <td rowspan="10">4-1</td>
+                <td>컴퓨터네트워크</td>
+              </tr>
+              <tr>
+                <td>컴파일러구성론</td>
+              </tr>
+              <tr>
+                <td>마이크로컴퓨터</td>
+              </tr>
+              <tr>
+                <td>데이터베이스프로그래밍</td>
+              </tr>
+              <tr>
+                <td>모바일 네트워크 및 프로그래밍</td>
+              </tr>
+              <tr>
+                <td>파일처리</td>
+              </tr>
+              <tr>
+                <td>소프트웨어 설계 및 프로젝트</td>
+              </tr>
+              <tr>
+                <td>현장실습 1</td>
+              </tr>
+              <tr>
+                <td>정보ㆍ컴퓨터논리 및 논술</td>
+              </tr>
+               <tr>
+                <td>캡스톤디자인 1</td>
+              </tr>
+              <tr>
+                <td rowspan="6">4-2</td>
+                <td>멀티미디어</td>
+              </tr>
+              <tr>
+                <td>네트워크 보안</td>
+              </tr>
+              <tr>
+                <td>임베디드시스템</td>
+              </tr>
+              <tr>
+                <td>현장실습 2</td>
+              </tr>
+              <tr>
+                <td>캡스톤디자인 1</td>
+              </tr>
+              <tr>
+                <td>자연언어처리</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+// Place all the styles related to the rooms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  line-height: 1;
+  height: 100%;
+  font-size: 15px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  //아래 3개 해줘야 스크롤없어짐 전체적인
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+//이거해줘야 스크롤없어진다 경석아 알겠니
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  height: 80%;
+}
+//꼭 필요하단다 알겠니 경석아
+
+.message-history {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.message {
+  position: relative;
+  //min-height: 36px; //메세지들 높이설정하는거임요
+}
+
+.input-box {
+  height: 100%;
+}
+
+.input-box_text {
+  font-size: 1rem;
+  width: 80%;
+  min-height: 35px !important; //입력창 높이!!
+}
+
+.tab-pane{
+  height:300px;
+  overflow-y:scroll;
+  width:100%;
+}
